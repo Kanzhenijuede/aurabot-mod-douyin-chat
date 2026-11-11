@@ -1,0 +1,25 @@
+{
+  "id": "douyin-chat",
+  "name": "抖音聊天",
+  "version": "0.1.0",
+  "description": "让她驻扎在抖音：读私信、按人格回，按人单独计数和节奏，默认只读不发送。",
+  "category": "platform",
+  "tags": [
+    "抖音",
+    "私信",
+    "聊天"
+  ],
+  "author": "Kanzhenijuede",
+  "license": "MIT",
+  "api": 1,
+  "minPluginVersion": "1.2.0",
+  "requires": [],
+  "capabilities": [
+    "network",
+    "filesystem",
+    "process",
+    "plugin-config",
+    "plugin-internals"
+  ],
+  "homepage": "https://github.com/Kanzhenijuede/aurabot-mod-douyin-chat"
+}

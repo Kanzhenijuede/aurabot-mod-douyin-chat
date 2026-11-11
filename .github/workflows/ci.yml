@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node --check index.mjs
+      - run: node --check lib/cdp.mjs && node --check lib/chat.mjs && node --check lib/policy.mjs && node --check lib/state.mjs
+      - run: node --test test/policy.test.mjs test/state.test.mjs

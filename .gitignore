@@ -1,0 +1,4 @@
+node_modules/
+.aurabot-cache/
+*.log
+.DS_Store

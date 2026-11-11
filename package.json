@@ -1,0 +1,12 @@
+{
+  "name": "aurabot-mod-douyin-chat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Aurabot 模块：让她驻扎在抖音，读私信并按人格回（默认只读不发送）",
+  "scripts": {
+    "test": "node --test test/policy.test.mjs test/state.test.mjs",
+    "check": "node --check index.mjs && node --check lib/cdp.mjs && node --check lib/chat.mjs && node --check lib/policy.mjs && node --check lib/state.mjs"
+  },
+  "license": "MIT"
+}
